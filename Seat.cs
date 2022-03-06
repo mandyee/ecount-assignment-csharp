@@ -10,9 +10,9 @@ namespace _20220304_Cinema
     {
         private static int[,] seat;
 
-        public Seat()
+        public Seat(int r, int c)
         {
-            seat = new int[4, 5];
+            seat = new int[r, c];
 
             for (int i = 0; i < seat.GetLength(0); i++)
             {

@@ -8,7 +8,14 @@ namespace _20220304_Cinema
 {
     class Customer
     {
-        int num;
+        private int num;
+        private int row, col;
+        
+        public Customer(int row, int col)
+        {
+            this.row = row;
+            this.col = col;
+        }
 
         public void Book()
         {
@@ -26,7 +33,7 @@ namespace _20220304_Cinema
                     Console.Write("좌석의 열을 선택해주세요. ");
                     col = int.Parse(Console.ReadLine()) - 1;
 
-                    if (row >= 0 && row < 4 && col >= 0 && col < 5) break;
+                    if (row >= 0 && row < this.row && col >= 0 && col < this.col) break;
                     else throw new Exception("존재하지 않는 좌석번호입니다.\n");
                 }
                 catch (Exception e)
