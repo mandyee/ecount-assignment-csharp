@@ -96,7 +96,7 @@ namespace _20220304_Cinema
                     Console.WriteLine("**************************");
                     Console.WriteLine("*****영화 예매 시스템*****");
                     Console.WriteLine("**************************");
-                    Console.Write("1. 예매하기\n\n2. 예매조회\n\n3. 예매취소\n\n");
+                    Console.Write("1. 예매하기\n\n2. 예매조회\n\n3. 예매취소\n\n4. 종료\n\n");
 
                     input = int.Parse(Console.ReadLine());
 
