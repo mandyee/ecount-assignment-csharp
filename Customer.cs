@@ -8,7 +8,6 @@ namespace _20220304_Cinema
 {
     class Customer
     {
-        Random rand = new Random();
         int num;
 
         public void Book()
@@ -48,6 +47,7 @@ namespace _20220304_Cinema
 
                         if (ans == 1)
                         {
+                            Random rand = new Random();
                             num = rand.Next();   // 중복값 검사 필요
 
                             Seat.Book(row, col, num);
