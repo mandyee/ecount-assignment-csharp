@@ -84,32 +84,5 @@ namespace _20220304_Cinema
                 }
             }
         }
-
-        public int DisplayMenu()
-        {
-            int input;
-
-            do
-            {
-                try
-                {
-                    Console.WriteLine("**************************");
-                    Console.WriteLine("*****영화 예매 시스템*****");
-                    Console.WriteLine("**************************");
-                    Console.Write("1. 예매하기\n\n2. 예매조회\n\n3. 예매취소\n\n4. 종료\n\n");
-
-                    input = int.Parse(Console.ReadLine());
-
-                    if (input >= 1 && input <= 4) break;
-                    else throw new Exception("올바른 메뉴를 선택하세요.\n");
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-            } while (true);
-
-            return input;
-        }
     }
 }
