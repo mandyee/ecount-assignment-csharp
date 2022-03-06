@@ -42,7 +42,7 @@ namespace _20220304_Cinema
 
         public static bool IsBooked(int row, int col)
         {
-            return seat[row, col] == 0 ? false : true;
+            return seat[row, col] != 0;
         }
 
         public static bool IsExist(int num)
